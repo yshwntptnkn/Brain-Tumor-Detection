@@ -16,7 +16,7 @@ The work is based on **transfer learning with EfficientNet**, fine-tuned on a cu
 - **Strong diagonal dominance in confusion matrix**
 - **Very low false negatives for tumor classes**
 
-> ⚠️ Grad-CAM–based interpretability was planned but is not included in the current version due to time constraints.
+> ⚠️ Grad-CAM–based interpretability was planned but is not included in the current version due to time constraints. The codebase and model structure support adding it later.
 
 ---
 
@@ -91,10 +91,41 @@ The legacy notebook is included in the repository for reference and historical c
 ---
 
 ## 🚀 How to Run
+
+### Prerequisites
+- Python 3.9+
+- Git
+
+### Steps
 1. Clone the repository
-2. Open `notebooks/multiclass_model.ipynb`
-3. Update dataset paths as required
-4. Run cells sequentially
+   ```bash
+   git clone <repo-url>
+   cd <repo-name>
+   ```
+
+2. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Update dataset paths in `src/config.py`
+   ```python
+   TRAIN_DIR = "path/to/Training"
+   TEST_DIR = "path/to/Testing"
+   ```
+
+4. Run the full training + evaluation pipeline
+   ```bash
+   python src/main.py
+   ```
+
+The script will:
+- Train the model (frozen + fine-tuning stages)
+- Evaluate on the test set
+- Print the classification report and confusion matrix
+- Save the trained model to disk
+
+> ℹ️ The notebook is optional and can be used for visualization, debugging, or further experimentation.
 
 ---
 
