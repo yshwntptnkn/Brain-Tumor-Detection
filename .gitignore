@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Model files
+*.h5
+*.keras
+
+# Data (IMPORTANT: don't upload datasets)
+data/
+Dataset/
+datasets/
+
+# Experiment outputs
+runs/
+logs/
+
+# IDEs
+.vscode/
+.idea/
