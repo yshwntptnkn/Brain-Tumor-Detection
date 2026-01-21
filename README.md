@@ -151,5 +151,5 @@ This project is intended for **academic and research purposes only** and should 
 ## 👤 Author
 Yashwant Patnaikuni
 
-📧 yashwantpatnaikuni@gmail.com
+📧 yashwantpatnaikuni@gmail.com <br>
 ℹ️ www.linkedin.com/in/yashwant-patnaikuni
